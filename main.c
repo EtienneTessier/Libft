@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/21 17:02:45 by etienne          ###   ########.fr       */
+/*   Updated: 2024/03/21 17:26:20 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,18 +72,16 @@ int	main(void)
 
 	// ft_memset
 	printf("\nft_memset :\n");
-	char *str = "bonjour les amis";
-	//ft_memset(str + 3, '.', 2*sizeof(char));
-	//printf("bonjour :%s\n", str);
-	
 	char tab[100];
     memset(tab, 0, 100);
     ft_memset(tab, 'A', 0);
     ft_memset(tab, 'A', 42);
-	printf("tab = %s\n", tab);/*
-    int i = 0;
-    for (; i < 100 && tab[i] == 'A'; ++i)
-        write;*/
-    write(1, "\n", 1);
+	printf("tab = %s\n", tab);
 
+	// ft_bzero
+	printf("\nft_bzero\n");
+	char tab2[100];
+    ft_bzero(tab2, 0);
+    ft_bzero(tab2, 42);
+	printf("tab2 = %s\n", tab2);
 }
