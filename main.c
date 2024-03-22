@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/21 17:26:20 by etienne          ###   ########.fr       */
+/*   Updated: 2024/03/22 08:53:11 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,4 +84,20 @@ int	main(void)
     ft_bzero(tab2, 0);
     ft_bzero(tab2, 42);
 	printf("tab2 = %s\n", tab2);
+
+	// ft_memcpy
+	printf("\nft_memcpy\n");
+	char destcpy[100];
+	memset(destcpy, 'A', 100);
+	printf("dest: %s\n", destcpy);
+	ft_memcpy(destcpy, "coucou", 0);
+	printf("ft 0 dest: %s\n", destcpy);
+	ft_memcpy(destcpy, "coucou", 3);
+	printf("ft 3 dest: %s\n", destcpy);
+	memset(destcpy, 'A', 100);
+	printf("reset dest: %s\n", destcpy);
+	memcpy(destcpy, "coucou", 3);
+	printf("og 3 dest: %s\n", destcpy);
+
+
 }
