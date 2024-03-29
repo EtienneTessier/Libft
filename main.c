@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/29 07:42:43 by etienne          ###   ########.fr       */
+/*   Updated: 2024/03/29 07:46:16 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,4 +106,13 @@ int	main(void)
 	printf("0 :%c\n", ft_toupper('0'));
 	printf("l :%c\n", ft_toupper('l'));
 	printf(": :%c\n", ft_toupper(':'));
+
+	// ft_tolower
+	printf("\nft_tolower\n\n");
+	printf("a :%c\n", ft_tolower('a'));
+	printf("A :%c\n", ft_tolower('A'));
+	printf("0 :%c\n", ft_tolower('0'));
+	printf("l :%c\n", ft_tolower('l'));
+	printf("L :%c\n", ft_tolower('L'));
+	printf(": :%c\n", ft_tolower(':'));
 }
