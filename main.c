@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/29 07:46:16 by etienne          ###   ########.fr       */
+/*   Updated: 2024/03/29 08:04:13 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,4 +115,22 @@ int	main(void)
 	printf("l :%c\n", ft_tolower('l'));
 	printf("L :%c\n", ft_tolower('L'));
 	printf(": :%c\n", ft_tolower(':'));
+
+	// ft_strchr
+	printf("\nft_strchr\n\n");
+	printf("'s' je suis content : %s\n", ft_strchr("je suis content", 's'));
+	printf("'c' je suis content : %s\n", ft_strchr("je suis content", 'c'));
+	printf("'z' je suis content : %s\n", ft_strchr("je suis content", 'z'));
+	printf("'e' je suis content : %s\n", ft_strchr("je suis content", 'e'));
+	printf("'9' je suis content : %s\n", ft_strchr("je suis content", '9'));
+
+	// ft_strrchr
+	printf("\nft_strrchr\n\n");
+	printf("'s' je suis content : %s\n", ft_strrchr("je suis content", 's'));
+	printf("'c' je suis content : %s\n", ft_strrchr("je suis content", 'c'));
+	printf("'z' je suis content : %s\n", ft_strrchr("je suis content", 'z'));
+	printf("'e' je suis content : %s\n", ft_strrchr("je suis content", 'e'));
+	printf("'9' je suis content : %s\n", ft_strrchr("je suis content", '9'));
+
+
 }

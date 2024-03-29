@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/21 14:45:58 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/29 07:54:02 by etienne          ###   ########.fr       */
+/*   Created: 2024/03/29 07:48:05 by etienne           #+#    #+#             */
+/*   Updated: 2024/03/29 08:00:51 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
-
-void	ft_bzero(void *s, size_t n)
+char	*ft_strrchr(char *str, char c)
 {
-	size_t			i;
-	unsigned char	*str;
+	int	i;
+	int	j;
 
 	i = 0;
-	str = (unsigned char *)s;
-	while (i < n)
+	j = -1;
+	while (str[i] != '\0')
 	{
-		str[i] = 0;
+		if (str[i] == c)
+			j = i;
 		i++;
 	}
-	return ;
+	if (str[i] == c)
+		j = i;
+	if (j == -1)
+		return (0);
+	return (&str[j]);
 }
