@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/29 08:04:13 by etienne          ###   ########.fr       */
+/*   Updated: 2024/03/29 08:22:04 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,5 +132,12 @@ int	main(void)
 	printf("'e' je suis content : %s\n", ft_strrchr("je suis content", 'e'));
 	printf("'9' je suis content : %s\n", ft_strrchr("je suis content", '9'));
 
+	// ft_strncmp
+	printf("\nft_strncmp\n\n");
+	printf("ABC ABC 3: %d\n", ft_strncmp("ABC","ABC", 3));
+	printf("ABC AB 3: %d\n", ft_strncmp("ABC","AB", 3));
+	printf("AB ABC 3: %d\n", ft_strncmp("AB","ABC", 3));
+	printf("ABC ZBC 3: %d\n", ft_strncmp("ABC","ZBC", 3));
+	printf("ABC AB 2: %d\n", ft_strncmp("ABC","AB", 2));
 
 }
