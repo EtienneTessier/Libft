@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/22 08:53:11 by etienne          ###   ########.fr       */
+/*   Updated: 2024/03/29 07:42:43 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,11 @@ int	main(void)
 	memcpy(destcpy, "coucou", 3);
 	printf("og 3 dest: %s\n", destcpy);
 
-
+	// ft_toupper
+	printf("\nft_toupper\n\n");
+	printf("a :%c\n", ft_toupper('a'));
+	printf("A :%c\n", ft_toupper('A'));
+	printf("0 :%c\n", ft_toupper('0'));
+	printf("l :%c\n", ft_toupper('l'));
+	printf(": :%c\n", ft_toupper(':'));
 }
