@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/03/29 08:22:04 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 10:05:33 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,17 @@ int	main(void)
 	printf(":%d\n", ft_strlen(""));
 	printf("Je suis:%d\n", ft_strlen("Je suis"));
 
+	// ft_strlcpy
+	printf("\nft_strlcpy :\n");
+	char destlcpy[100];
+	int result_lcpy;
+	result_lcpy = ft_strlcpy(destlcpy, "bonjour", 5);
+	printf("bonjour(5), %s, %d\n", destlcpy, result_lcpy);
+	result_lcpy = ft_strlcpy(destlcpy, "coucou", 6);
+	printf("coucou(6), %s, %d\n", destlcpy, result_lcpy);
+	result_lcpy = ft_strlcpy(destlcpy, "salut", 0);
+	printf("salut(0), %s, %d\n", destlcpy, result_lcpy);
+
 	// ft_memset
 	printf("\nft_memset :\n");
 	char tab[100];
@@ -99,6 +110,20 @@ int	main(void)
 	memcpy(destcpy, "coucou", 3);
 	printf("og 3 dest: %s\n", destcpy);
 
+/*	// ft_memmove
+	printf("\nft_memmove\n");
+	char destmove[100];
+	memset(destmove, 'A', 100);
+	printf("dest: %s\n", destmove);
+	ft_memmove(destmove, "coucou", 0);
+	printf("ft 0 dest: %s\n", destmove);
+	ft_memmove(destmove, "coucou", 3);
+	printf("ft 3 dest: %s\n", destmove);
+	memset(destmove, 'A', 100);
+	printf("reset dest: %s\n", destmove);
+	memcpy(destmove, "coucou", 3);
+	printf("og 3 dest: %s\n", destmove);
+*/
 	// ft_toupper
 	printf("\nft_toupper\n\n");
 	printf("a :%c\n", ft_toupper('a'));
