@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 11:59:11 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 14:38:10 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,15 +139,15 @@ int	main(void)
 	printf("\nft_memchr :\n");
 	char *memchr = "ouais pas mal";
 	printf("%s\n", memchr);
-	printf("i(10) : %s\n", ft_memchr(memchr, 'i', 10));
-	printf("i(3) : %s\n", ft_memchr(memchr, 'i', 3));
-	printf("l(30) : %s\n", ft_memchr(memchr, 'l', 30));
-	printf("l(0) : %s\n", ft_memchr(memchr, 'l', 0));
-	printf("l(13) : %s\n", ft_memchr(memchr, 'l', 13));
-	printf("z(20) : %s\n", ft_memchr(memchr, 'z', 20));
+	printf("i(10) : %s\n", (char *)ft_memchr(memchr, 'i', 10));
+	printf("i(3) : %s\n", (char *)ft_memchr(memchr, 'i', 3));
+	printf("l(30) : %s\n", (char *)ft_memchr(memchr, 'l', 30));
+	printf("l(0) : %s\n", (char *)ft_memchr(memchr, 'l', 0));
+	printf("l(13) : %s\n", (char *)ft_memchr(memchr, 'l', 13));
+	printf("z(20) : %s\n", (char *)ft_memchr(memchr, 'z', 20));
 
 	// ft_toupper
-	printf("\nft_toupper\n\n");
+	printf("\nft_toupper :\n");
 	printf("a :%c\n", ft_toupper('a'));
 	printf("A :%c\n", ft_toupper('A'));
 	printf("0 :%c\n", ft_toupper('0'));
@@ -155,7 +155,7 @@ int	main(void)
 	printf(": :%c\n", ft_toupper(':'));
 
 	// ft_tolower
-	printf("\nft_tolower\n\n");
+	printf("\nft_tolower :\n");
 	printf("a :%c\n", ft_tolower('a'));
 	printf("A :%c\n", ft_tolower('A'));
 	printf("0 :%c\n", ft_tolower('0'));
@@ -164,7 +164,7 @@ int	main(void)
 	printf(": :%c\n", ft_tolower(':'));
 
 	// ft_strchr
-	printf("\nft_strchr\n\n");
+	printf("\nft_strchr :\n");
 	printf("'s' je suis content : %s\n", ft_strchr("je suis content", 's'));
 	printf("'c' je suis content : %s\n", ft_strchr("je suis content", 'c'));
 	printf("'z' je suis content : %s\n", ft_strchr("je suis content", 'z'));
@@ -172,19 +172,36 @@ int	main(void)
 	printf("'9' je suis content : %s\n", ft_strchr("je suis content", '9'));
 
 	// ft_strrchr
-	printf("\nft_strrchr\n\n");
+	printf("\nft_strrchr :\n");
 	printf("'s' je suis content : %s\n", ft_strrchr("je suis content", 's'));
 	printf("'c' je suis content : %s\n", ft_strrchr("je suis content", 'c'));
 	printf("'z' je suis content : %s\n", ft_strrchr("je suis content", 'z'));
 	printf("'e' je suis content : %s\n", ft_strrchr("je suis content", 'e'));
 	printf("'9' je suis content : %s\n", ft_strrchr("je suis content", '9'));
 
+	// ft_strnstr
+	printf("\nft_strnstr\n");
+	char strnstr[100] = "Comment ca va ? Ouais pas mal"; //len : 29
+	printf("Ouais(30), %s\n", ft_strnstr(strnstr,"Ouais", 30));
+	printf("Ouais(20), %s\n", ft_strnstr(strnstr,"Ouais", 20));
+	printf("Ouais(10), %s\n", ft_strnstr(strnstr,"Ouais", 10));
+	printf("Ouaiis(30), %s\n", ft_strnstr(strnstr,"Ouaiis", 30));
+	printf("(30), %s\n", ft_strnstr(strnstr,"", 30));
+
 	// ft_strncmp
-	printf("\nft_strncmp\n\n");
+	printf("\nft_strncmp :\n");
 	printf("ABC ABC 3: %d\n", ft_strncmp("ABC","ABC", 3));
 	printf("ABC AB 3: %d\n", ft_strncmp("ABC","AB", 3));
 	printf("AB ABC 3: %d\n", ft_strncmp("AB","ABC", 3));
 	printf("ABC ZBC 3: %d\n", ft_strncmp("ABC","ZBC", 3));
 	printf("ABC AB 2: %d\n", ft_strncmp("ABC","AB", 2));
+
+	// ft_memcmp
+	printf("\nft_memcmp :\n");
+	printf("ABC ABC 3: %d\n", ft_memcmp("ABC","ABC", 3));
+	printf("ABC AB 3: %d\n", ft_memcmp("ABC","AB", 3));
+	printf("AB ABC 3: %d\n", ft_memcmp("AB","ABC", 3));
+	printf("ABC ZBC 3: %d\n", ft_memcmp("ABC","ZBC", 3));
+	printf("ABC AB 2: %d\n", ft_memcmp("ABC","AB", 2));
 
 }

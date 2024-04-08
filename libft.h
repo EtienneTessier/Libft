@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:43:50 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 11:54:50 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 14:25:45 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int		ft_tolower(int c);
 
 int		ft_strlen(char *str);
 
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
@@ -40,6 +42,8 @@ size_t	ft_strlcat(char *dst, char *src, size_t size);
 char	*ft_strchr(char *str, char c);
 
 char	*ft_strrchr(char *str, char c);
+
+char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 
 void	*ft_memset(void *ptr, int x, size_t n);
 
