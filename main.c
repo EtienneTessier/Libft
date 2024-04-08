@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 14:38:10 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 15:10:57 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,17 @@ int	main(void)
 	printf("0 :%d\n", ft_isprint('0'));
 	printf("DEL :%d\n", ft_isprint(127));
 	printf(". :%d\n", ft_isprint('.'));
+
+	// ft_atoi
+	printf("\nft_atoi :\n");
+	printf("42: %d\n", ft_atoi("42"));
+	printf("+42: %d\n", ft_atoi("+42"));
+	printf("-42: %d\n", ft_atoi("-42"));
+	printf("  42: %d\n", ft_atoi("  42"));
+	printf("--42: %d\n", ft_atoi("--42"));
+	printf("42a5: %d\n", ft_atoi("42a5"));
+	printf("z42: %d\n", ft_atoi("z42"));
+	printf(": %d\n", ft_atoi(""));
 
 	// ft_strlen
 	printf("\nft_strlen :\n");
