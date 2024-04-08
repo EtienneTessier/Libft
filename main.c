@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 11:02:00 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 11:59:11 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,6 +135,17 @@ int	main(void)
 	memcpy(destmove, "coucou", 3);
 	printf("og 3 dest: %s\n", destmove);
 */
+	//ft_memchr
+	printf("\nft_memchr :\n");
+	char *memchr = "ouais pas mal";
+	printf("%s\n", memchr);
+	printf("i(10) : %s\n", ft_memchr(memchr, 'i', 10));
+	printf("i(3) : %s\n", ft_memchr(memchr, 'i', 3));
+	printf("l(30) : %s\n", ft_memchr(memchr, 'l', 30));
+	printf("l(0) : %s\n", ft_memchr(memchr, 'l', 0));
+	printf("l(13) : %s\n", ft_memchr(memchr, 'l', 13));
+	printf("z(20) : %s\n", ft_memchr(memchr, 'z', 20));
+
 	// ft_toupper
 	printf("\nft_toupper\n\n");
 	printf("a :%c\n", ft_toupper('a'));

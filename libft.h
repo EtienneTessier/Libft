@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:43:50 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 11:20:24 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 11:54:50 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,11 @@ char	*ft_strrchr(char *str, char c);
 
 void	*ft_memset(void *ptr, int x, size_t n);
 
-void	ft_bzero(void *ptr, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+
+void	ft_bzero(void *ptr, size_t n);
 
 //void	*ft_memmove(void *dest, const void *src, size_t n);
 #endif
