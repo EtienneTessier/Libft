@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 10:05:33 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/08 11:02:00 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,17 @@ int	main(void)
 	printf("coucou(6), %s, %d\n", destlcpy, result_lcpy);
 	result_lcpy = ft_strlcpy(destlcpy, "salut", 0);
 	printf("salut(0), %s, %d\n", destlcpy, result_lcpy);
+
+	// ft_strlcat
+	printf("\nft_strlcat :\n");
+	char destlcat[100] = "Salut";
+	int result_lcat;
+	result_lcat = ft_strlcat(destlcat, " ca va?", 11);
+	printf(" ca va?(11), %s, %d\n", destlcat, result_lcat);
+	result_lcat = ft_strlcat(destlcat, " ouais", 17);
+	printf(" ouais(17), %s, %d\n", destlcat, result_lcat);
+	result_lcat = ft_strlcat(destlcat, " pas mal pas mal", 27);
+	printf(" pas mal pas mal(27), %s, %d\n", destlcat, result_lcat);
 
 	// ft_memset
 	printf("\nft_memset :\n");
