@@ -174,6 +174,17 @@ int	main(void)
 	printf("L :%c\n", ft_tolower('L'));
 	printf(": :%c\n", ft_tolower(':'));
 
+	// ft_strdup
+	printf("\nft_strdup :\n");
+	char *dup1;
+	printf("dup1 avant : %s\n", dup1);
+	dup1 = ft_strdup("Salut bg");
+	printf("dup1 apres : %s\n", dup1);
+	char *dup2 = "yo";
+	printf("dup2 avant : %s\n", dup2);
+	dup2 = ft_strdup("Ouais pas mal");
+	printf("dup2 apres : %s\n", dup2);
+
 	// ft_strchr
 	printf("\nft_strchr :\n");
 	printf("'s' je suis content : %s\n", ft_strchr("je suis content", 's'));
