@@ -30,8 +30,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	s_len = ft_strlen(s);
+	if (start > s_len || len < 1)
+		return (NULL);
 	str = malloc(sizeof(char) * (s_len - start + 1));
-	if (!str || start > s_len || len < 1)
+	if (!str)
 		return (NULL);
 	while (s[start + i] != '\0' && (size_t)i < len)
 	{
