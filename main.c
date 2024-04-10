@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/08 15:10:57 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/10 10:02:26 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <stdlib.h>
 
 int	main(void)
 {
@@ -215,4 +215,13 @@ int	main(void)
 	printf("ABC ZBC 3: %d\n", ft_memcmp("ABC","ZBC", 3));
 	printf("ABC AB 2: %d\n", ft_memcmp("ABC","AB", 2));
 
+	// ft_calloc
+	printf("\nft_calloc :\n");
+	int *stralloc;
+	free(stralloc);
+	printf("avant p:%p s:%ld\n", &stralloc, sizeof(stralloc));
+	free(stralloc);
+	stralloc = ft_calloc(50, sizeof(int));
+	free(stralloc);
+	printf("apres p:%p s:%ld\n", &stralloc, sizeof(stralloc));
 }
