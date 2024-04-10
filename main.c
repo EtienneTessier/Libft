@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 11:47:38 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/10 14:01:11 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -243,4 +243,17 @@ int	main(void)
 	printf("sub3 = %s\n", sub3);
 	char *sub4 = ft_substr("Salut comment ca va bg", 0, 0);
 	printf("sub4 = %s\n", sub4);
+
+	// ft_strjoin
+	printf("\nft_strjoin :\n");
+	char *join1 = ft_strjoin("Salut", " ca va");
+	printf("'Salut',' ca va' : %s\n", join1);
+	char *join2 = ft_strjoin("Salut ", "ca va");
+	printf("'Salut ','ca va' : %s\n", join2);
+	char *join3 = ft_strjoin("", "ca va");
+	printf("'','ca va' : %s\n", join3);
+	char *join4 = ft_strjoin("Salut", "");
+	printf("'Salut','' : %s\n", join4);
+	char *join5 = ft_strjoin("", "");
+	printf("'','' : %s\n", join5);
 }

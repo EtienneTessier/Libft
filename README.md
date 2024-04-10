@@ -27,7 +27,7 @@ ft_calloc   -> à vérifier
 
   - Part 2 :
 ft_substr   -> ok
-ft_strjoin
+ft_strjoin  -> ok
 ft_strtrim
 ft_split
 ft_itoa
