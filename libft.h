@@ -6,7 +6,7 @@
 /*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:43:50 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 10:12:09 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/10 10:52:58 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 void	*ft_calloc(size_t nb, size_t size);
 
-//void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 
 void	ft_bzero(void *ptr, size_t n);
 
