@@ -26,9 +26,9 @@ ft_atoi     -> ok
 ft_calloc   -> à vérifier
 
   - Part 2 :
-ft_substr   -> ok
+ft_substr   -> comportement lorsque start > str_len || len < 1 ?
 ft_strjoin  -> ok
-ft_strtrim
+ft_strtrim  -> ok
 ft_split
 ft_itoa
 ft_strmapi

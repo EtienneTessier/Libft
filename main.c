@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 14:01:11 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/10 15:58:59 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -177,13 +177,14 @@ int	main(void)
 	// ft_strdup
 	printf("\nft_strdup :\n");
 	char *dup1;
-	printf("dup1 avant : %s\n", dup1);
 	dup1 = ft_strdup("Salut bg");
 	printf("dup1 apres : %s\n", dup1);
+	free (dup1);
 	char *dup2 = "yo";
 	printf("dup2 avant : %s\n", dup2);
 	dup2 = ft_strdup("Ouais pas mal");
 	printf("dup2 apres : %s\n", dup2);
+	free (dup2);
 
 	// ft_strchr
 	printf("\nft_strchr :\n");
@@ -232,28 +233,55 @@ int	main(void)
 	printf("avant p:%p s:%ld\n", &stralloc, sizeof(stralloc));
 	stralloc = ft_calloc(50, sizeof(int));
 	printf("apres p:%p s:%ld\n", &stralloc, sizeof(stralloc));
+	free(stralloc);
 
 	// ft_substr
 	printf("\nft_substr\n");
 	char *sub1 = ft_substr("Salut comment ca va bg", 6, 10);
 	printf("sub1 = %s\n", sub1);
+	free(sub1);
 	char *sub2 = ft_substr("Salut comment ca va bg", 6, 30);
 	printf("sub2 = %s\n", sub2);
+	free(sub2);
 	char *sub3 = ft_substr("Salut comment ca va bg", 30, 30);
 	printf("sub3 = %s\n", sub3);
+	free(sub3);
 	char *sub4 = ft_substr("Salut comment ca va bg", 0, 0);
 	printf("sub4 = %s\n", sub4);
+	free(sub4);
 
 	// ft_strjoin
 	printf("\nft_strjoin :\n");
 	char *join1 = ft_strjoin("Salut", " ca va");
 	printf("'Salut',' ca va' : %s\n", join1);
+	free(join1);
 	char *join2 = ft_strjoin("Salut ", "ca va");
 	printf("'Salut ','ca va' : %s\n", join2);
+	free(join2);
 	char *join3 = ft_strjoin("", "ca va");
 	printf("'','ca va' : %s\n", join3);
+	free(join3);
 	char *join4 = ft_strjoin("Salut", "");
 	printf("'Salut','' : %s\n", join4);
+	free(join4);
 	char *join5 = ft_strjoin("", "");
 	printf("'','' : %s\n", join5);
+	free(join5);
+	
+	// ft_strtrim
+	printf("\nft_strtrim :\n");
+	char *trim1 = ft_strtrim("Salut comment ca va", " ");
+	printf("'Salut comment ca va',' ' : %s\n", trim1);
+	free(trim1);
+	char *trim2 = ft_strtrim("Ozuakzis kpazzs makzl", "kz");
+	printf("'Ozuakzis kpazzs makzl ','kz' : %s\n", trim2);
+	free(trim2);
+	char *trim3 = ft_strtrim("", "ca va");
+	printf("'','ca va' : %s\n", trim3);
+	free(trim3);
+	char *trim4 = ft_strtrim("Salut", "");
+	printf("'Salut','' : %s\n", trim4);
+	free(trim4);
+	//char *trim5 = ft_strtrim("", "");
+	//printf("'','' : %s\n", trim5);
 }
