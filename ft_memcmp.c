@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -26,7 +26,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		if (str1[i] > str2[i])
 			return (1);
 		if (str2[i] > str1[i])
-		return (-1);
+			return (-1);
 		i++;
 	}
 	return (0);
