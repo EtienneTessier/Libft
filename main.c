@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 10:02:26 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/10 11:47:38 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,29 @@ int	main(void)
 	printf("DEL :%d\n", ft_isprint(127));
 	printf(". :%d\n", ft_isprint('.'));
 
+	// ft_toupper
+	printf("\nft_toupper :\n");
+	printf("a :%c\n", ft_toupper('a'));
+	printf("A :%c\n", ft_toupper('A'));
+	printf("0 :%c\n", ft_toupper('0'));
+	printf("l :%c\n", ft_toupper('l'));
+	printf(": :%c\n", ft_toupper(':'));
+
+	// ft_tolower
+	printf("\nft_tolower :\n");
+	printf("a :%c\n", ft_tolower('a'));
+	printf("A :%c\n", ft_tolower('A'));
+	printf("0 :%c\n", ft_tolower('0'));
+	printf("l :%c\n", ft_tolower('l'));
+	printf("L :%c\n", ft_tolower('L'));
+	printf(": :%c\n", ft_tolower(':'));
+	
+	// ft_strlen
+	printf("\nft_strlen :\n");
+	printf("Je suis content:%d\n", ft_strlen("Je suis content"));
+	printf(":%d\n", ft_strlen(""));
+	printf("Je suis:%d\n", ft_strlen("Je suis"));
+
 	// ft_atoi
 	printf("\nft_atoi :\n");
 	printf("42: %d\n", ft_atoi("42"));
@@ -74,12 +97,6 @@ int	main(void)
 	printf("42a5: %d\n", ft_atoi("42a5"));
 	printf("z42: %d\n", ft_atoi("z42"));
 	printf(": %d\n", ft_atoi(""));
-
-	// ft_strlen
-	printf("\nft_strlen :\n");
-	printf("Je suis content:%d\n", ft_strlen("Je suis content"));
-	printf(":%d\n", ft_strlen(""));
-	printf("Je suis:%d\n", ft_strlen("Je suis"));
 
 	// ft_strlcpy
 	printf("\nft_strlcpy :\n");
@@ -157,23 +174,6 @@ int	main(void)
 	printf("l(13) : %s\n", (char *)ft_memchr(memchr, 'l', 13));
 	printf("z(20) : %s\n", (char *)ft_memchr(memchr, 'z', 20));
 
-	// ft_toupper
-	printf("\nft_toupper :\n");
-	printf("a :%c\n", ft_toupper('a'));
-	printf("A :%c\n", ft_toupper('A'));
-	printf("0 :%c\n", ft_toupper('0'));
-	printf("l :%c\n", ft_toupper('l'));
-	printf(": :%c\n", ft_toupper(':'));
-
-	// ft_tolower
-	printf("\nft_tolower :\n");
-	printf("a :%c\n", ft_tolower('a'));
-	printf("A :%c\n", ft_tolower('A'));
-	printf("0 :%c\n", ft_tolower('0'));
-	printf("l :%c\n", ft_tolower('l'));
-	printf("L :%c\n", ft_tolower('L'));
-	printf(": :%c\n", ft_tolower(':'));
-
 	// ft_strdup
 	printf("\nft_strdup :\n");
 	char *dup1;
@@ -229,10 +229,18 @@ int	main(void)
 	// ft_calloc
 	printf("\nft_calloc :\n");
 	int *stralloc;
-	free(stralloc);
 	printf("avant p:%p s:%ld\n", &stralloc, sizeof(stralloc));
-	free(stralloc);
 	stralloc = ft_calloc(50, sizeof(int));
-	free(stralloc);
 	printf("apres p:%p s:%ld\n", &stralloc, sizeof(stralloc));
+
+	// ft_substr
+	printf("\nft_substr\n");
+	char *sub1 = ft_substr("Salut comment ca va bg", 6, 10);
+	printf("sub1 = %s\n", sub1);
+	char *sub2 = ft_substr("Salut comment ca va bg", 6, 30);
+	printf("sub2 = %s\n", sub2);
+	char *sub3 = ft_substr("Salut comment ca va bg", 30, 30);
+	printf("sub3 = %s\n", sub3);
+	char *sub4 = ft_substr("Salut comment ca va bg", 0, 0);
+	printf("sub4 = %s\n", sub4);
 }

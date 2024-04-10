@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:43:50 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 10:52:58 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/10 11:54:06 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ char	*ft_strchr(char *str, char c);
 char	*ft_strrchr(char *str, char c);
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 void	*ft_memset(void *ptr, int x, size_t n);
 
