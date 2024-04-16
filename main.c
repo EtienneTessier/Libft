@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 15:58:59 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/16 11:18:21 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -284,4 +284,31 @@ int	main(void)
 	free(trim4);
 	//char *trim5 = ft_strtrim("", "");
 	//printf("'','' : %s\n", trim5);
+
+	// ft_split
+	printf("\nft_split :\n");
+	char **splited1 = ft_split("bonjour je suis etienne", ' ');
+	printf("\"bonjour je suis etienne\", ' ' :\n");
+	for(int i = 0; splited1[i]; i++)
+	{
+		printf("%d : %s\n", i, splited1[i]);
+		free(splited1[i]);
+	}
+	free(splited1);
+	char **splited2 = ft_split("  bonjour   je   suisetienne  ", ' ');
+	printf("\"  bonjour   je   suisetienne  \" , ' ' :\n");
+	for(int i = 0; splited2[i]; i++)
+	{
+		printf("%d : %s\n", i, splited2[i]);
+		free(splited2[i]);
+	}
+	free(splited2);
+	char **splited3 = ft_split("ouais pas mal", 'z');
+	printf("\"ouais pas mal\", 'z' :\n");
+	for(int i = 0; splited3[i]; i++)
+	{
+		printf("%d : %s\n", i, splited3[i]);
+		free(splited3[i]);
+	}
+	free(splited3);
 }
