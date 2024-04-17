@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/16 11:18:21 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/17 10:45:49 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -311,4 +311,23 @@ int	main(void)
 		free(splited3[i]);
 	}
 	free(splited3);
+
+	// ft_itoa
+	printf("\nft_itoa :\n");
+	char *itoa1 = ft_itoa(152);
+	printf("152 : %s\n", itoa1);
+	char *itoa2 = ft_itoa(150);
+	printf("150 : %s\n", itoa2);
+	char *itoa3 = ft_itoa(-152);
+	printf("-152 : %s\n", itoa3);
+	char *itoa4 = ft_itoa(-15470);
+	printf("-15470 : %s\n", itoa4);
+	char *itoa5 = ft_itoa(1505);
+	printf("1505 : %s\n", itoa5);
+	char *itoa6 = ft_itoa(0);
+	printf("0 : %s\n", itoa6);
+	char *itoa7 = ft_itoa(-0);
+	printf("-0 : %s\n", itoa7);
+	char *itoa8 = ft_itoa(-154700);
+	printf("-154700 : %s\n", itoa8);
 }

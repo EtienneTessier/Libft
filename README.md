@@ -30,7 +30,7 @@ ft_substr   -> comportement lorsque start > str_len || len < 1 ?
 ft_strjoin  -> ok
 ft_strtrim  -> ok
 ft_split    -> ok
-ft_itoa
+ft_itoa     -> ok
 ft_strmapi
 ft_striteri
 ft_putchar_fd
