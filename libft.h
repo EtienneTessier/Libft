@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:43:50 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/18 16:04:56 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/18 16:34:21 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	ft_bzero(void *ptr, size_t n);
 
 void	ft_putchar_fd(char c, int fd);
+
+void	ft_putstr_fd(char *s, int fd);
+
+void	ft_putendl_fd(char *s, int fd);
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 

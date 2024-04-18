@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/18 16:20:22 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/18 16:35:20 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -365,4 +365,29 @@ int	main(void)
 	ft_striteri(striteri1, ft_revalpha_bis);
 	printf("The striteried string is : %s\n", striteri1);
 	free(striteri1);
+
+	// ft_putchar_fd
+	printf("\nft_putchar_fd :\n");
+	ft_putchar_fd('a', 0);
+	printf("\n");
+	ft_putchar_fd('a', 1);
+	printf("\n");
+	ft_putchar_fd('a', 2);
+	printf("\n");
+
+	// ft_putstr_fd
+	printf("\nft_putstr_fd :\n");
+	ft_putstr_fd("Ouais pas mal", 0);
+	printf("\n");
+	ft_putstr_fd("Ouais pas trop mal", 1);
+	printf("\n");
+	ft_putstr_fd("Ouais plutot pas mal", 2);
+	printf("\n");
+
+	// ft_putendl_fd
+	printf("\nft_putendl_fd :\n");
+	ft_putendl_fd("Ouais mec", 0);
+	ft_putendl_fd("Comment ca va", 1);
+	ft_putendl_fd("No hablo espanol", 2);
+	
 }

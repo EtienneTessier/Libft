@@ -32,10 +32,10 @@ ft_strtrim  -> ok
 ft_split    -> ok
 ft_itoa     -> ok
 ft_strmapi  -> ok
-ft_striteri -> ok
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
+ft_striteri -> Vérifier le comportement sans allouer
+ft_putchar_fd -> ok
+ft_putstr_fd  -> ok
+ft_putendl_fd -> ok
 ft_putnbr_fd
 
 Makefile
