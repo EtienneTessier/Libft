@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/17 10:45:49 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/18 14:51:51 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,15 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
+
+char	ft_revalpha(unsigned int i, char c)
+{
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	else if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
+}
 
 int	main(void)
 {
@@ -330,4 +339,14 @@ int	main(void)
 	printf("-0 : %s\n", itoa7);
 	char *itoa8 = ft_itoa(-154700);
 	printf("-154700 : %s\n", itoa8);
+
+	// ft_strmapi
+	printf("\nft_strmapi :\n");
+	char *init_str = "Ouais Pas Mal";
+	char *final_str = ft_strmapi(init_str, ft_revalpha);
+	if (!final_str)
+		printf("Memory allocation failed");
+	printf("The initial string is : %s\n", init_str);
+	printf("The strmapied string is : %s\n", final_str);
+	free(final_str);
 }
