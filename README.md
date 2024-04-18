@@ -36,7 +36,7 @@ ft_striteri -> Vérifier le comportement sans allouer
 ft_putchar_fd -> ok
 ft_putstr_fd  -> ok
 ft_putendl_fd -> ok
-ft_putnbr_fd
+ft_putnbr_fd  -> ok
 
 Makefile
 

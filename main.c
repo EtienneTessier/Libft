@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/18 16:35:20 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/18 17:06:42 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -390,4 +390,16 @@ int	main(void)
 	ft_putendl_fd("Comment ca va", 1);
 	ft_putendl_fd("No hablo espanol", 2);
 	
+	// ft_putnbr_fd
+	printf("\nft_putnbr_fd :\n");
+	ft_putnbr_fd(42, 0);
+	printf("\n");
+	ft_putnbr_fd(420000, 1);
+	printf("\n");
+	ft_putnbr_fd(45422, 1);
+	printf("\n");
+	ft_putnbr_fd(-42, 1);
+	printf("\n");
+	ft_putnbr_fd(0, 2);
+	printf("\n");
 }
