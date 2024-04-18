@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/18 15:17:30 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/18 16:20:22 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,14 @@ char	ft_revalpha(unsigned int i, char c)
 	else if (c >= 'A' && c <= 'Z')
 		c += 32;
 	return (c);
+}
+
+void	ft_revalpha_bis(unsigned int i, char *c)
+{
+	if (*c >= 'a' && *c <= 'z')
+		*c -= 32;
+	else if (*c >= 'A' && *c <= 'Z')
+		*c += 32;
 }
 
 int	main(void)
@@ -352,8 +360,9 @@ int	main(void)
 
 	// ft_striteri
 	printf("\nft_striteri :\n");
-	char *striteri1 = "Ouais Pas Mal";
-	char *striteri2 = ft_strmapi(striteri1, ft_revalpha);
+	char *striteri1 = ft_strdup("Ouais Pas Mal");
 	printf("The initial string is : %s\n", striteri1);
-	printf("The strmapied string is : %s\n", striteri2);
+	ft_striteri(striteri1, ft_revalpha_bis);
+	printf("The striteried string is : %s\n", striteri1);
+	free(striteri1);
 }
