@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:58:47 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/18 14:51:51 by etessier         ###   ########.fr       */
+/*   Updated: 2024/04/18 15:17:30 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -342,11 +342,18 @@ int	main(void)
 
 	// ft_strmapi
 	printf("\nft_strmapi :\n");
-	char *init_str = "Ouais Pas Mal";
-	char *final_str = ft_strmapi(init_str, ft_revalpha);
-	if (!final_str)
+	char *strmapi1 = "Ouais Pas Mal";
+	char *strmapi2 = ft_strmapi(strmapi1, ft_revalpha);
+	if (!strmapi2)
 		printf("Memory allocation failed");
-	printf("The initial string is : %s\n", init_str);
-	printf("The strmapied string is : %s\n", final_str);
-	free(final_str);
+	printf("The initial string is : %s\n", strmapi1);
+	printf("The strmapied string is : %s\n", strmapi2);
+	free(strmapi2);
+
+	// ft_striteri
+	printf("\nft_striteri :\n");
+	char *striteri1 = "Ouais Pas Mal";
+	char *striteri2 = ft_strmapi(striteri1, ft_revalpha);
+	printf("The initial string is : %s\n", striteri1);
+	printf("The strmapied string is : %s\n", striteri2);
 }

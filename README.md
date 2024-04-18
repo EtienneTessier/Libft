@@ -31,8 +31,8 @@ ft_strjoin  -> ok
 ft_strtrim  -> ok
 ft_split    -> ok
 ft_itoa     -> ok
-ft_strmapi
-ft_striteri
+ft_strmapi  -> ok
+ft_striteri -> ok
 ft_putchar_fd
 ft_putstr_fd
 ft_putendl_fd

@@ -6,7 +6,7 @@
 /*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:43:50 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/18 14:53:06 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/18 15:07:14 by etienne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+char	*ft_striteri(char const *s, char (*f)(unsigned int, char));
 
 char	**ft_split(char const *s, char c);
 
