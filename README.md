@@ -38,7 +38,7 @@ ft_putstr_fd  -> ok
 ft_putendl_fd -> ok
 ft_putnbr_fd  -> ok
 
-Makefile
+Makefile	-> ok
 
   - Bonus Part :
 Ajout de la structure dans le header

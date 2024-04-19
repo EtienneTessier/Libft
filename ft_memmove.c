@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etienne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: etessier <etessier@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 07:49:14 by etienne           #+#    #+#             */
-/*   Updated: 2024/04/10 10:52:51 by etienne          ###   ########.fr       */
+/*   Updated: 2024/04/19 07:47:49 by etessier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*s;
 
 	i = 0;
+	temp = (unsigned char *)dest;
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	while (i < n)
